@@ -1,40 +1,42 @@
-public class InsertionSort{
-    public static void main() { // main method
-        // INSERTION SORT
+public class selectionsort
+{
+    public static void main() { 
+        // SELECTION SORT
         // declares, initializes, and prints original array
         System.out.println();
-        System.out.println("Insertion Sort Method");
-        int[] array4 = {500, 25, 1, 81, 4, 49};
+        System.out.println("Selection Sort Method");
+        int[] array3 = {500, 25, 1, 81, 4, 49};
         System.out.print("Here is your unsorted array: [");
-        printArray(array4);
-
+        printArray(array3);
         // declares, initializes, sorts, and prints the sorted array
-        int[] sortedArray4 = insertionSort(array4); // selectionSort method
+        int[] sortedArray3 = selectionSort(array3); // selectionSort method
         System.out.print("Here is your sorted array: [");
-        printArray(sortedArray4);
+        printArray(sortedArray3);
     }
 
-    public static int[] insertionSort(int[] ints){ // uses insertion sort
+    public static int[] selectionSort(int[] ints){ // uses selection sort
         // metrics variables
         int compares = 0;
         int swaps = 0;
         double time = System.nanoTime();
 
-        int tempJ;
         // repeats until the index is one less than the array length
-        for(int i = 1; i < ints.length; i++){
-            // runs through the array beginning at i and going backward
-            for(int j = i; j > 0; j--) {
+        for(int i = 0; i < ints.length - 1; i++){
+            // value at which to start the sort
+            int start = i;
+            // runs through the array beginning just after the start
+            for(int j = i + 1; j < ints.length; j++) {
                 // compares the start value to the ones after it
                 compares++;
-                if(ints[j] < ints[j-1]){
-                    // if the current value is less, swap the two
-                    tempJ = ints[j];
-                    ints[j] = ints[j-1];
-                    ints[j-1] = tempJ;
-                    swaps++;
+                if(ints[j] < ints[start]){
+                    start = j;
                 }
             }
+            // swapping part
+            int tempJ = ints[start];
+            ints[start] = ints[i];
+            ints[i] = tempJ;
+            swaps++;
         }
         double endTime = System.nanoTime();
 
@@ -45,7 +47,7 @@ public class InsertionSort{
 
         // returns the sorted array
         return ints;
-    }
+    }  
 
     public static void printArray(int[] ints){ // extra method to print an array
         // runs through the array, printing the values

@@ -1,10 +1,11 @@
-class Select
+
+class MySort
 {
     void sort(int arr[])
     {
         int n = arr.length;
-        long startTime = System.currentTimeMillis();
-        long duration = 0;
+  
+        // One by one move boundary of unsorted subarray
         for (int i = 0; i < n-1; i++)
         {
             // Find the minimum element in unsorted array
@@ -18,11 +19,8 @@ class Select
             arr[min_idx] = arr[i];
             arr[i] = temp;
         }
-        long endTime = System.currentTimeMillis();
-        duration = endTime - startTime;
-        System.out.println("Your duration is: " + duration);
     }
-    
+  
     // Print
     void printArray(int arr[])
     {
@@ -35,11 +33,10 @@ class Select
     // Driver code to test above
     public static void main(String args[])
     {
-        Select ob = new Select();
+        MySort ob = new MySort();
         int arr[] = {7,25,10,3,1};
         ob.sort(arr);
         System.out.println("This Is your sorted array:");
         ob.printArray(arr);
-        
     }
 }

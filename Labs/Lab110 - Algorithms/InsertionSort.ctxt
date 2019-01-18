@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=InsertionSort
-comment1.params=arr
-comment1.target=void\ sort(int[])
-comment2.params=arr
-comment2.target=void\ printArray(int[])
-comment3.params=args
-comment3.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=void\ main()
+comment2.params=ints
+comment2.target=int[]\ insertionSort(int[])
+comment3.params=ints
+comment3.target=void\ printArray(int[])
 numComments=4
