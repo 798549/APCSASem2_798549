@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * ArrayList Project
  *
- * @Grace Jau
+ * @Jeremiah Ponce
  * @version 1025
  */
 public class StudListRunner
@@ -24,6 +24,7 @@ public class StudListRunner
             System.out.println("8 Exit");
             System.out.println();
             statement = in.nextLine();
+            
             if (statement.equals("1")){
                 System.out.println("Student name:");
                 name = in.nextLine();//takes student name input
@@ -115,6 +116,7 @@ public class StudListRunner
         }
         return num;
     }
+    
     
     public static int inputNumOrString(String nameOrLastName){//determines whether the user would like to input the student number or name
         while (true){
