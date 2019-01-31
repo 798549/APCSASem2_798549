@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * ArrayList Project
  *
- * @Grace Jau
+ * @Jeremiah Ponce
  * @version 1025
  */
 public class StudList{
