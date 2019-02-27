@@ -1,3 +1,4 @@
+// Jeremiah Ponce
 public class BubbleSort{
     public static void main() {
     // BUBBLE SORT

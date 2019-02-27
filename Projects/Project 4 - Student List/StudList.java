@@ -180,10 +180,9 @@ public class StudList{
             }
         }
     }
-
-    /**
-     * clears the student list
-     */
+    
+    
+    // this clears the list
     public void clearList(){
         studList.clear();
     }

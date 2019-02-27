@@ -28,7 +28,7 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
     int gutterY;
     Timer animationTimer;
     int motionSpeed;
-    
+
     public CanvasComponent(int w, int h){
         // initializes canvas component object
         rectX = 150;
@@ -50,7 +50,7 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
         animationTimer = new Timer(20, this);
         animationTimer.start();
     }
-    
+
     protected void paintComponent(Graphics g){
         // drawing the rectangle
         if(mouseInRect == true){
@@ -67,18 +67,18 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
         g.setColor(Color.white);
         g.setColor(Color.black);
         // animates the pupils based on mouse position
-        
+
     }
-    
+
     public void mouseClicked(MouseEvent e){
         // empty method
     }
-    
+
     public void mousePressed(MouseEvent e){
         // gets the position of the mouse
         mouseFromX = e.getX();
         mouseFromY = e.getY();
-        
+
         // determines whether or not the mouse is inside the rectangle
         if(mouseFromX > rectX && mouseFromX < rectX + rectWidth && mouseFromY > rectY && mouseFromY < rectY + rectHeight){
             shapeSelected = true;
@@ -97,20 +97,20 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
             }
         }
     }
-    
+
     public void mouseReleased(MouseEvent e){
         // used to make rectangle start moving after letting go of it
         shapeSelected = false;
     }
-    
+
     public void mouseEntered(MouseEvent e){
         // empty method
     }
-    
+
     public void mouseExited(MouseEvent e){
         // empty method
     }
-    
+
     public void mouseDragged(MouseEvent e){
         if(shapeSelected == true){
             // gets the second mouse position
@@ -126,12 +126,12 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
             repaint();
         }
     }
-    
+
     public void mouseMoved(MouseEvent e){
         // gets the position of the mouse
         mouseFromX = e.getX();
         mouseFromY = e.getY();
-        
+
         // extra method to determine whether or not your cursor is in the rectangle
         if(mouseFromX > rectX && mouseFromX < rectX + rectWidth && mouseFromY > rectY && mouseFromY < rectY + rectHeight){
             mouseInRect = true;
@@ -139,7 +139,7 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
             mouseInRect = false;
         }
     }
-    
+
     public void actionPerformed(ActionEvent e){
         if(shapeSelected == false){
             // new dimension object
@@ -181,7 +181,7 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
         // redraws the shape
         repaint();
     }
-    
+
     public void keyTyped(KeyEvent e){
         // detects if a key is pressed
         char keyChar = e.getKeyChar();
@@ -194,6 +194,7 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
         }
     }
 
+    
     public void keyPressed(KeyEvent e){
         // empty method
     }
