@@ -21,7 +21,7 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
     boolean mouseInRect;
     boolean shapeSelected;
     int mouseToX;
-    int mouseToY;
+    int mouseToY;\
     int animationDeltaX;
     int animationDeltaY;
     int gutterX;
