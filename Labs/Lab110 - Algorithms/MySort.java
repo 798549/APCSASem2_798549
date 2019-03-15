@@ -1,4 +1,4 @@
-//Jeremiah Ponce
+//  Jeremiah Ponce
 class MySort
 {
     void sort(int arr[])
@@ -33,7 +33,7 @@ class MySort
     public static void main(String args[])
     {
         MySort ob = new MySort();
-        int arr[] = {7,25,10,3,1};
+        int arr[] = {7,25,10,3,7973,1};
         ob.sort(arr);
         System.out.println("This Is your sorted array:");
         ob.printArray(arr);
