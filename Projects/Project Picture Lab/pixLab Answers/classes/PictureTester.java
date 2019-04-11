@@ -34,14 +34,14 @@ public class PictureTester
   
   /** Method to test the collage method */
   public static void testCollage(){
-    Picture canvas = new Picture("640x480.jpg");
+    Picture canvas = new Picture("4032?×?3024.jpg");
     canvas.createCollage();
     canvas.explore();
   }
   
   /** Method to test edgeDetection */
   public static void testEdgeDetection(){
-    Picture swan = new Picture("swan.jpg");
+    Picture swan = new Picture("IMG-6168.JPG");
     swan.edgeDetection(10);
     swan.explore();
   }
