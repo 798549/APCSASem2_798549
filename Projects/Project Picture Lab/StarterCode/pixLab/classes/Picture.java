@@ -218,6 +218,7 @@ public class Picture extends SimplePicture
   }
   
   
+  
   /* Main method for testing - each class in Java can have a main 
    * method 
    */
