@@ -98,8 +98,13 @@ p{
 
 
 
-
+/* for the social media images */
 .socials{
-  height: 20px;
-  width: 20px;
+  background-color: yellow;
+  height: 40px;
+  width: auto;
+}
+
+.socImg{
+  align: center;
 }
