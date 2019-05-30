@@ -51,9 +51,6 @@ body{
 
 
 
-
-
-
 /* for text */
   }
   h1{
@@ -100,11 +97,12 @@ p{
 
 /* for the social media images */
 .socials{
-  background-color: yellow;
+  margin-top: 20px;
   height: 40px;
   width: auto;
 }
 
 .socImg{
-  align: center;
+  float: right;
+  padding-left: 30px;
 }
