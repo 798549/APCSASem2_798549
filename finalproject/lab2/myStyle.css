@@ -63,7 +63,7 @@ body{
 
 h2{
   text-align: center;
-  font-size: 80px;
+  font-size: 100px;
   font-family: "lucida grande";
   font-weight: lighter;
   font-style: italic;
@@ -73,13 +73,14 @@ h2{
 p{
   font-family: "neue helvetica";
   color: white;
-  font-size: 20px;
+  font-size: 50px;
   text-align: center;
 }
 
 /* for the lines */
 .boxed{
   border: 3px solid white;
+  margin-bottom: 20px;
 }
 
 
@@ -104,5 +105,7 @@ p{
 
 .socImg{
   float: right;
-  padding-left: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
 }
